@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Total Browse</title>
+    <meta charset="utf-8" />
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/App/Folder/app.js"></script>
+</head>
+<body ng-app="AppModule">
+    <div class="container" ng-controller="AppCtrl" ng-init="getDisks()">
+
+
+        <table border="1">
+            <tr width="193" height="10" bgcolor="#aeaaaa" style="border: 1px  #00001b; padding-top: 0in; padding-bottom: 0in; padding-left: 0.08in; padding-right: 0.08in">
+
+                <td width="193" height="10">
+                    <p style="text-align: center;"><font color=white><font face="Arial, serif"><font size=3><b>Less 10Mb</b></font></font></font></p>
+                </td>
+                <td width="193" height="10">
+                    <p style="text-align: center;"><font color=white><font face="Arial, serif"><font size=3><b>10Mb-50Mb</b></font></font></font></p>
+                </td>
+                <td width="193" height="10">
+                    <p style="text-align: center;"><font color=white><font face="Arial, serif"><font size=3><b>More 100Mb</b></font></font></font></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="text-align: center;"><span style="color: #7D7373;">{{filesless10mb}}</span></p>
+                </td>
+                <td>
+                    <p style="text-align: center;"><span style="color: #7D7373;">{{filesless50mb}}</span></p>
+                </td>
+                <td>
+                    <p style="text-align: center;"><span style="color: #7D7373;">{{filesover50mb}}</span></p>
+                </td>
+            </tr>
+        </table>
+        <button class="sub"
+            ng-class="{subHovered: hover}"
+            ng-mouseenter="hover = true"
+            ng-mouseleave="hover = false"
+            ng-repeat="disk in disks"
+            ng-click="getFolder(disk.Name+':/')">
+            {{disk.Name}}:/
+            Type: ({{disk.Type}})</button>
+        
+        <p>
+            <strong><span style="color: #707070;">Host name : {{hostName}}</span></strong>
+        </p>
+        <p>
+            <strong><span style="color: #707070;">Current path : {{address}}</span></strong>
+        </p>
+        <p>
+            <strong><span style="color: #7f7f7f;"> </span></strong>
+        </p>
+
+
+        <ul style="list-style-type: none">
+            <li class="sub2"
+                ng-click="getFolder(parentAddress)">
+                ...
+            </li>
+            <li class="sub"
+                ng-class="{subHovered: hover}"
+                ng-mouseenter="hover = true"
+                ng-mouseleave="hover = false"
+                ng-repeat="subdir in subdirs"
+                ng-click="getFolder(subdir.FullName)">
+                {{subdir.Name}}
+            </li>
+            <li class="sub"
+                ng-class="{subHovered: hover}"
+                ng-mouseenter="hover = true"
+                ng-mouseleave="hover = false"
+                ng-repeat="file in files"
+                ng-click="getFile(file.FullName)">
+                >{{file.Name}}<
+
+            </li>
+            <li>  
+        </ul>
+    </div>
+</body>
+</html>

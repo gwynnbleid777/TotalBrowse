@@ -1,0 +1,5 @@
+D:\projekts\TotalBrowse\TotalBrowse.Domain\bin\Debug\TotalBrowse.Domain.dll
+D:\projekts\TotalBrowse\TotalBrowse.Domain\bin\Debug\TotalBrowse.Domain.pdb
+D:\projekts\TotalBrowse\TotalBrowse.Domain\obj\Debug\TotalBrowse.Domain.csprojResolveAssemblyReference.cache
+D:\projekts\TotalBrowse\TotalBrowse.Domain\obj\Debug\TotalBrowse.Domain.dll
+D:\projekts\TotalBrowse\TotalBrowse.Domain\obj\Debug\TotalBrowse.Domain.pdb

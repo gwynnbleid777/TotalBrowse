@@ -1,0 +1,9 @@
+D:\projekts\TotalBrowse\TotalBrowse.BLL\bin\Debug\TotalBrowse.BLL.dll
+D:\projekts\TotalBrowse\TotalBrowse.BLL\bin\Debug\TotalBrowse.BLL.pdb
+D:\projekts\TotalBrowse\TotalBrowse.BLL\bin\Debug\TotalBrowse.Domain.dll
+D:\projekts\TotalBrowse\TotalBrowse.BLL\bin\Debug\TotalBrowse.Interfaces.dll
+D:\projekts\TotalBrowse\TotalBrowse.BLL\bin\Debug\TotalBrowse.Domain.pdb
+D:\projekts\TotalBrowse\TotalBrowse.BLL\bin\Debug\TotalBrowse.Interfaces.pdb
+D:\projekts\TotalBrowse\TotalBrowse.BLL\obj\Debug\TotalBrowse.BLL.csprojResolveAssemblyReference.cache
+D:\projekts\TotalBrowse\TotalBrowse.BLL\obj\Debug\TotalBrowse.BLL.dll
+D:\projekts\TotalBrowse\TotalBrowse.BLL\obj\Debug\TotalBrowse.BLL.pdb
